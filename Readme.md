@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Albina Chernyateva](https://up.htmlacademy.ru/htmlcss/25/user/834965).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Половков](https://htmlacademy.ru/profile/psinegmatic).
 
 ---
 
