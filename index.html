@@ -11,40 +11,68 @@
                     <img src="img/index-logo.svg" width="154" height="64" alt="Логотип Gllacy Shop">
                 </a>
                 <ul class="site-navigation">
-                    <li><a href="catalog.html">Каталог</a></li>
-                    <li><a href="delivery.html">Доставка и оплата</a></li>
-                    <li><a href="about-company.html">О компании</a></li>
+                    <li class="site-navigation-item">
+                        <p class="visually-hidden">Каталог</p>
+                        <button type="button">Каталог</button>
+                        <ul class="sub-menu">
+                            <li class="sub-menu-item">
+                                <a class="sub-menu-link" href="catalog.html"><b>Новинки</b></a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a class="sub-menu-link" href="catalog.html">Сливочное</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a class="sub-menu-link current" href="catalog.html">Щербеты</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a class="sub-menu-link" href="catalog.html">Фруктовый лед</a>
+                            </li>
+                            <li class="sub-menu-item">
+                                <a class="sub-menu-link" href="catalog.html">Мелорин</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-navigation-item"><a href="delivery.html">Доставка и оплата</a></li>
+                    <li class="site-navigation-item"><a href="about-company.html">О компании</a></li>
                 </ul>
                 <ul class="user-navigation">
-                    <li class="search-link">Поиск</li>
-                    <li class="login-link">Вход</li>
-                    <li class="basket-link empty">Пусто</li>
+                    <li class="search-link">
+                        <p class="visually-hidden">Поиск</p>
+                        <button type="button"><img src="img/svg-gllacy/loupe.svg" alt="Поиск"></button>
+                        <form class="search-form" action="#/search" method="get">
+                            <p>
+                                <label for="search-field" class="visually-hidden">Поисковая строка</label>
+                                <input id="search-field" type="search" name="search" placeholder="Что ищем?">
+                            </p>
+                        </form>
+                    </li>
+                    <li class="login-link">
+                        <p class="visually-hidden">Вход в личный кабинет</p>
+                        <button type="button"><img src="img/svg-gllacy/entrance.svg" alt="Вход">Вход</button>
+                        <form class="login-form" action="#" method="post">
+                            <p>
+                                <label for="login-field" class="visually-hidden">Электронная почта</label>
+                                <input id="login-field" class="login-user" type="text" name="login" value="" placeholder="Электронная почта">
+                            </p>
+                            <p>
+                                <label for="password-field" class="visually-hidden">Пароль</label>
+                                <input id="password-field" class="login-icon-password" type="password" name="password" value="" placeholder="Пароль">
+                            </p>
+                            <button class="button" type="submit">Войти</button>
+                            <p class="login-password-info">
+                                <a class="password-restore" href="#">Забыли пароль?</a>
+                                <a class="new-registration" href="#">Новая регистрация</a>
+                            </p>
+                        </form>
+                    </li>
+                    <li class="basket-link empty">
+                        <p class="visually-hidden">Корзина</p>
+                        <button type="button"><img src="img/svg-gllacy/basket.svg" alt="Вход">Пусто</button>
+                    </li>
                 </ul>
             </nav>
             <div class="work-hours">С 10 до 20, ежедневно</div>
             <div class="phone-number">8 812 450-25-25</div>
-
-            <section class="menu">
-                <h2 class="visually-hidden">Меню каталога</h2>
-                <ul class="menu-list">
-                    <li class="menu-item"><a class="menu" href="#"><b>Новинки</b></a></li>
-                    <li class="menu-item"><a class="menu" href="#">Сливочное</a></li>
-                    <li class="menu-item"><a class="menu current" href="#">Щербеты</a></li>
-                    <li class="menu-item"><a class="menu" href="#">Фруктовый лед</a></li>
-                    <li class="menu-item"><a class="menu" href="#">Мелорин</a></li>
-                </ul>
-            </section>
-            <section class="modal modal-search">
-                <h2 class="visually-hidden">Поиск</h2>
-                <!-- Здесь будет форма -->
-            </section>
-            <section class="modal modal-login">
-                <h2 class="visually-hidden">Вход в личный кабинет</h2>
-                <!-- Здесь будет форма -->
-                <a class="button" href="#">Войти</a>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-            </section>
         </header>
 
         <main class="container">
@@ -123,22 +151,20 @@
             <section class="subscription">
                 <h2 class="visually-hidden">Рассылка</h2>
                 <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                <!-- Здесь будет форма -->
-                <a class="button" href="#">Отправить</a>
+                <!-- Форма -->
+                <form class="clients-mail" action="#" method="post"></form>
+                <label for="email-field" class="visually-hidden">Ваша электронная почта</label>
+                <input id="email-field" type="email" name="email" value="" placeholder="Электронная почта">
+                <button type="submit" class="button">Отправить</button>
             </section>
-            <!-- Здесь будет карта и форма обратной связи
+            <!-- Здесь будет карта-->
             <section class="map">
+                <h2 class="visually-hidden">Как добраться</h2>
                 <p class="contacts">Адрес главного офиса<br>и офлайн-магазина:
                     <span class="address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
                     Для заказов по телефону:
                     <span class="phone-number">8 812 450-25-25</span>(с 10 до 20 ежедневно)</p>
                 <a class="button" href="#">Форма обратной связи</a>
-            </section>-->
-            <section class="search">
-                <h2 class="visually-hidden">Обратная связь</h2>
-                <p>Мы обязательно вам ответим!</p>
-                <!-- Здесь будет форма -->
-                <a class="button" href="#">Отправить</a>
             </section>
         </main>
 
@@ -151,19 +177,40 @@
                     <li><a class="social-button" href="#">Вконтакте</a></li>
                 </ul>
             </div>
-            <section class="additional">
+            <div class="additional">
                 <ul>
                     <li class="additional-items current"><a href="#">Для поставщиков</a></li>
                     <li class="additional-items"><a href="#">О производстве</a></li>
                     <li class="additional-items"><a href="#">Наши документы</a></li>
                     <li class="additional-items"><a href="#">Экологические стандарты</a></li>
                 </ul>
-            </section>
-            <section class="footer-copyright">
-                <img src="academy_logo.png" width="100" height="50" alt="Логотип html academy">
+            </div>
+            <div class="footer-copyright">
+                <img src="img/svg-gllacy/logo-htmlacademy.svg" width="100" height="50" alt="Логотип html academy">
                 <p>Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a>&copy;2019</p>
-            </section>
+            </div>
         </footer>
-        
+
+        <section class="modal modal-feedback">
+            <h2 class="visually-hidden">Форма обратной связи</h2>
+            <p>Мы обязательно вам ответим!</p>
+            <!--Форма -->
+            <form class="feedback-form" action="#" method="post">
+                <p class="clients-name">
+                    <label for="name-field" class="visually-hidden">Имя</label>
+                    <input id="name-field" type="text" name="name" value="" placeholder="Как вас зовут?">
+                </p>
+                <p class="feedback-form">
+                    <label for="feedback-email-field" class="visually-hidden">Электронная почта</label>
+                    <input id="feedback-email-field" type="email" name="email" value="" placeholder="Ваша почта для ответа?">
+                </p>
+                <p class="feedback-form">
+                    <label for="message-field" class="visually-hidden">Ваше сообщение</label>
+                    <input id="message-field" type="text" name="message" value="" placeholder="Напишите что-нибудь...">
+                </p>
+                <button class="button" type="submit">Отправить</button>
+            </form>
+        </section>
+
     </body>
 </html>

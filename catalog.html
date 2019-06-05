@@ -18,46 +18,39 @@
                 <ul class="user-navigation">
                     <li class="search-link">Поиск</li>
                     <li class="login-link">Вход</li>
-                    <li class="basket-link full">2 товара</li>
+                    <li class="basket-link full">
+                        <p class="visually-hidden">Корзина</p>
+                        <button type="button"><img src="img/svg-gllacy/basket-red.svg" alt="Вход">2 товара</button>
+                        <table class="basket-list">
+                            <tr>
+                                <td class="basket-delete">
+                                    <button type="button" class="button-delete">x</button>
+                                </td>
+                                <td class="basket-image"><img src="img/ice-cream-bin-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                                <td class="basket-item">Пломбир с апельсиновым джемом</td>
+                                <td class="basket-amount">1,5 кг х</td>
+                                <td class="basket-price">200 руб.</td>
+                                <td class="basket-item-price">300 руб.</td>
+                            </tr>
+                            <tr>
+                                <td class="basket-delete">
+                                    <button type="button" class="button-delete">x</button>
+                                </td>
+                                <td class="basket-image"><img src="img/ice-cream-bin-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                                <td class="basket-item">Клубничный пломбир с присыпкой из белого шоколада</td>
+                                <td class="basket-amount">1,5 кг х</td>
+                                <td class="basket-price">300 руб.</td>
+                                <td class="basket-item-price">450 руб.</td>
+                            </tr>
+                        </table>
+                        <b>Итого:</b><span class="basket-total-price">750 руб.</span>
+                        <a class="button" href="#">Оформить заказ</a>
+                    </li>
                 </ul>
             </nav>
             <div class="work-hours">С 10 до 20, ежедневно</div>
             <div class="phone-number">8 812 450-25-25</div>
-            <section class="modal modal-search">
-                <h2 class="visually-hidden">Поиск</h2>
-                <!-- Здесь будет форма -->
-            </section>
-            <section class="modal modal-login">
-                <h2 class="visually-hidden">Вход в личный кабинет</h2>
-                <!-- Здесь будет форма -->
-                <a class="button" href="#">Войти</a>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
-                <span class="modal-close">x</span>
-            </section>
-            <section class="modal modal-basket">
-                <h2 class="visually-hidden">Корзина</h2>
-                <table class="basket-list">
-                    <tr>
-                        <td class="basket-delete">x</td>
-                        <td class="basket-image"><img src="img/ice-cream-bin-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                        <td class="basket-item">Пломбир с апельсиновым джемом</td>
-                        <td class="basket-amount">1,5 кг х</td>
-                        <td class="basket-price">200 руб.</td>
-                        <td class="basket-item-price">300 руб.</td>
-                    </tr>
-                    <tr>
-                        <td class="basket-delete">x</td>
-                        <td class="basket-image"><img src="img/ice-cream-bin-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                        <td class="basket-item">Клубничный пломбир с присыпкой из белого шоколада</td>
-                        <td class="basket-amount">1,5 кг х</td>
-                        <td class="basket-price">300 руб.</td>
-                        <td class="basket-item-price">450 руб.</td>
-                    </tr>
-                </table>
-                <b>Итого:</b><span class="basket-total-price">750 руб.</span>
-                <a class="button" href="#">Оформить заказ</a>
-            </section>
+
         </header>
 
         <main class="container">
@@ -69,6 +62,7 @@
             </ul>
             <!-- Здесь будет форма -->
             <section class="products">
+                <h2 class="visually hidden">Ассортимент сливочного мороженного</h2>
                 <ul class="products-list">
                     <li class="products-item">
                         <img src="img/ice-cream-1.jpg" width="100" height="100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -166,18 +160,18 @@
                         <li><a class="social-button" href="#">Вконтакте</a></li>
                     </ul>
                 </div>
-                <section class="additional">
+                <div class="additional">
                     <ul>
                         <li class="additional-items current"><a href="#">Для поставщиков</a></li>
                         <li class="additional-items"><a href="#">О производстве</a></li>
                         <li class="additional-items"><a href="#">Наши документы</a></li>
                         <li class="additional-items"><a href="#">Экологические стандарты</a></li>
                     </ul>
-                </section>
-                <section class="footer-copyright">
+                </div>
+                <div class="footer-copyright">
                     <img src="academy_logo.png" width="100" height="50" alt="Логотип html academy">
                     <p>Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a>&copy;2019</p>
-                </section>
+                </div>
         </footer>
 
     </body>
